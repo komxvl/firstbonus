@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bonus Tasks</title>
+</head>
+
+<style>
+    fieldset{
+        width: 700px;
+    }
+    fieldset legend{
+        font-size: 18px;
+    }
+    .caption{
+        font-size:20px;
+    }
+    .contacted input[type=checkbox] , .type-contacted input[type=radio]{
+        margin-left:0 !important;
+    }
+    .type-contacted , .contacted{
+        font-family: sans-serif;
+        font-weight: bold;
+    }  
+</style>
+<body>
+    <form action="handler.php">
+  <fieldset>
+   <legend>Contacting you</legend>
+    <p class="caption">We may contact you from time to time...</p>
+    <div class="contacted">
+        <p>How would you like to be contacted?</p>
+        <input type="checkbox">By email<br>
+        <input type="checkbox">By post <br>
+        <input type="checkbox">By carrier pigeon <br><br>
+    </div>
+    <div class="type-contacted">
+        <p> How often would you like to be contacted? </br>
+        <input type="radio" class="radio" />
+        <label for="Weekly">Weekly</label>
+        <input type="radio" class="radio" style="margin-left: 350px !important;" />
+        <label for="Daily">Daily</label>
+    </div>
+    
+  </fieldset>
+ </form> 
+</body>
+</html>
